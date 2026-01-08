@@ -2,24 +2,435 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>C Programming Programs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
-    <link rel="stylesheet" href="s.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #34495e;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        pre {
+            background: #1e1e1e;
+            color: #00ff99;
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 15px;
+        }
+
+        .program {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 30px;
+        }
+
+        .output {
+            background: #ecf0f1;
+            padding: 12px;
+            border-left: 5px solid #3498db;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
+<header>
+    <h1>C Programming Examples and Programs</h1>
+    <p>Well-structured C programs for learning and practice</p>
+</header>
 
-<div class="card">
-    <h1 class="title">Instagram Login</h1>
-   
 
-    <form>
-        <input type="text" placeholder="Username or email" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Sign In</button>
-    </form>
+<div class="container">
+    <section class="program">
+  
+<section class="program">
+    <h2>Program 1: Print Message in Different Lines</h2>
+    <p>
+        This program prints Hello word! using the <code>printf()</code>
+        function in C.
+    </p>
 
-    
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    printf("\n Hello word!");
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Dice <br>
+        Gadag Road <br>
+        Koppal
+    </div>
+</section>
+
+</section>
+<!-- PROGRAM 5 -->
+<section class="program">
+    <h2>Program 2: Read and Print Two Integer Numbers</h2>
+    <p>
+        This program reads two integer numbers from the user and prints them
+        using the <code>scanf()</code> and <code>printf()</code> functions.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int a, b;
+
+    printf("Enter the values of a and b: ");
+    scanf("%d %d", &a, &b);
+
+    printf("a = %d\nb = %d", a, b);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: a = 10, b = 20 <br>
+        Output: <br>
+        a = 10 <br>
+        b = 20
+    </div>
+</section>
+<!-- PROGRAM 6 -->
+<section class="program">
+    <h2>Program 3: Read and Print Two Real Numbers</h2>
+    <p>
+        This program reads two real (floating-point) numbers from the user
+        and prints them using the <code>scanf()</code> and <code>printf()</code> functions.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    float a, b;
+
+    printf("Enter the values of a and b: ");
+    scanf("%f %f", &a, &b);
+
+    printf("a = %.2f\nb = %.2f", a, b);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: a = 12.5, b = 7.8 <br>
+        Output: <br>
+        a = 12.50 <br>
+        b = 7.80
+    </div>
+</section>
+<!-- PROGRAM 4 -->
+<section class="program">
+    <h2>Program 4: Read and Print Two Characters</h2>
+    <p>
+        This program reads two characters from the user and prints them
+        using the <code>scanf()</code> and <code>printf()</code> functions in C.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    char a, b;
+
+    printf("Enter two characters: ");
+    scanf(" %c %c", &a, &b);
+
+    printf("a = %c\nb = %c", a, b);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: a = A, b = B <br>
+        Output: <br>
+        a = A <br>
+        b = B
+    </div>
+</section>
+<!-- PROGRAM 5 -->
+<section class="program">
+    <h2>Program 5: Add Two Numbers</h2>
+    <p>
+        This program reads two integer numbers and calculates their sum.
+        The result is stored in a variable <code>c</code>.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int a, b, c;
+
+    printf("Enter the values of a and b: ");
+    scanf("%d %d", &a, &b);
+
+    c = a + b;
+
+    printf("a = %d\nb = %d\nc = %d", a, b, c);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: a = 10, b = 20 <br>
+        Output: <br>
+        a = 10 <br>
+        b = 20 <br>
+        c = 30
+    </div>
+</section>
+<!-- PROGRAM 6 -->
+<section class="program">
+    <h2>Program 6: Subtract Two Numbers</h2>
+    <p>
+        This program reads two integer numbers and subtracts the second number
+        from the first number. The result is stored in variable <code>c</code>.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int a, b, c;
+
+    printf("Enter the values of a and b: ");
+    scanf("%d %d", &a, &b);
+
+    c = a - b;
+
+    printf("a = %d\nb = %d\nc = %d", a, b, c);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: a = 20, b = 10 <br>
+        Output: <br>
+        a = 20 <br>
+        b = 10 <br>
+        c = 10
+    </div>
+</section>
+<!-- PROGRAM 7 -->
+<section class="program">
+    <h2>Program 7: Multiply Two Numbers</h2>
+    <p>
+        This program reads two integer numbers from the user and calculates
+        their product. The result is stored in variable <code>c</code>.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int a, b, c;
+
+    printf("Enter the values of a and b: ");
+    scanf("%d %d", &a, &b);
+
+    c = a * b;
+
+    printf("a = %d\nb = %d\nc = %d", a, b, c);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: a = 5, b = 6 <br>
+        Output: <br>
+        a = 5 <br>
+        b = 6 <br>
+        c = 30
+    </div>
+</section>
+<!-- PROGRAM 8 -->
+<section class="program">
+    <h2>Program 8: Divide Two Numbers</h2>
+    <p>
+        This program reads two integers from the user and divides the first number
+        by the second. The result is stored in a <code>float</code> variable <code>c</code>
+        to allow decimal values.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int a, b;
+    float c;
+
+    printf("Enter the values of a and b: ");
+    scanf("%d %d", &a, &b);
+
+    c = (float)a / b; 
+
+    printf("a = %d\nb = %d\nc = %.2f", a, b, c);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: a = 10, b = 4 <br>
+        Output: <br>
+        a = 10 <br>
+        b = 4 <br>
+        c = 2.50
+    </div>
+</section>
+
+<!-- PROGRAM 9 -->
+<section class="program">
+    <h2>Program 9: Calculating Average of Numbers</h2>
+    <p>
+        This program calculates the average of numbers. The user enters the total
+        sum of the numbers, and the program divides it by 6 to find the average.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int total;
+    float avg;
+
+    printf("Enter the value for total: ");
+    scanf("%d", &total);
+
+    avg = (float)total / 6; 
+
+    printf("Total = %d\nAverage = %.2f", total, avg);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: total = 54 <br>
+        Output: <br>
+        Total = 54 <br>
+        Average = 9.00
+    </div>
+</section>
+
+<!-- PROGRAM 10 -->
+<section class="program">
+    <h2>Program 10: Calculate Amount</h2>
+    <p>
+        This program calculates the amount based on the rate and quantity entered by the user. 
+        The formula used is <code>amount = rate × quantity</code>.
+    </p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int rate, qty, amount;
+
+    printf("Enter the value for rate and quantity: ");
+    scanf("%d %d", &rate, &qty);
+
+    amount = rate * qty;
+
+    printf("Rate = %d\nQuantity = %d\nAmount = %d", rate, qty, amount);
+
+    return 0;
+}
+</pre>
+
+    <div class="output">
+        Example Output: <br>
+        Input: rate = 50, qty = 4 <br>
+        Output: <br>
+        Rate = 50 <br>
+        Quantity = 4 <br>
+        Amount = 200
+    </div>
+</section>
+
+
+
+
 </div>
+ 
+<footer>
+    © 2026 | C Programming Practical File
+</footer>
 
 </body>
 </html>
